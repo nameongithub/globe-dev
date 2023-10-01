@@ -75,7 +75,7 @@ export const datapoints = [
     new Datapoint(37.774, -122.419, {
         image_path: "./static/images/sanf.png",
         labelsAndTexts: [
-            {label: 'City:', text: 'San Francisco, CA'},
+            {label: 'City: ', text: 'San Francisco, CA'},
             {label: 'Country: ', text: 'United States'},
             {label: 'Location: ', text: '37.774°N, 122.419°W'},
             {label: 'Direction: ', text: 'Right-hand traffic'},
@@ -85,7 +85,7 @@ export const datapoints = [
     new Datapoint(40.440, -79.995, {
         image_path: "./static/images/pitt.png",
         labelsAndTexts: [
-            {label: 'City:', text: 'Pittsburgh, PA'},
+            {label: 'City: ', text: 'Pittsburgh, PA'},
             {label: 'Country: ', text: 'United States'},
             {label: 'Location: ', text: '40.440°N, 79.995°W'},
             {label: 'Direction: ', text: 'Right-hand traffic'},
