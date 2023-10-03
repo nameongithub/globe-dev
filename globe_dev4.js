@@ -83,6 +83,7 @@ orbitControls.maxDistance = 300;
 orbitControls.rotateSpeed = 1;
 // tbControls.zoomSpeed = 0.8;
 orbitControls.enableZoom=false;
+orbitControls.enableDamping=true;//惯性效果
 
 
 //窗口伸縮
