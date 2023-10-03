@@ -3,6 +3,7 @@ import { OrbitControls } from '//unpkg.com/three/examples/jsm/controls/OrbitCont
 import { CSS2DRenderer } from '//unpkg.com/three/examples/jsm/renderers/CSS2DRenderer.js';
 Object.assign(THREE , { TrackballControls, CSS2DRenderer, OrbitControls });
 import {datapoints,markerSvg} from "./for_markers_dev2.js";
+import {getOffsetAgainstPage} from "./util.js";
 
 
 const Globe = new ThreeGlobe()
@@ -105,7 +106,11 @@ function onPointerMove( event ) {
     // (-1 to +1) for both components
 
     pointer.x = ( event.clientX / window.innerWidth ) * 2 - 1;
-    pointer.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+    let canvasElement=document.getElementsByTagName("canvas");
+    pointer.y = - ( (event.pageY-getOffsetAgainstPage(globeWebGLRenderer.domElement).top) / window.innerHeight ) * 2 + 1;
+
+    // console.log(event.clientY,event.pageY, pointer.y)
+
 
 }
 window.addEventListener( 'pointermove', onPointerMove );
@@ -117,19 +122,22 @@ function mouseOnGlobe(){
     // calculate objects intersecting the picking ray
     const intersects = raycaster.intersectObjects( scene.children );
     // console.log(intersects.length)
+
+    // for ( let i = 0; i < intersects.length; i ++ ) {
+    //
+    //     console.log(intersects[ i ])
+    //
+    // }
+
+
+
     if (intersects.length===0) { //如果沒有鼠標在地球上
         return false;
     }else{
         return true;
     }
+
 }
-
-
-
-
-
-
-
 
 
 
