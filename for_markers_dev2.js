@@ -151,7 +151,29 @@ export const datapoints = [
             {label: 'Direction: ', text: 'Left-hand traffic'},
             {label: 'Scenario: ', text: 'Driving on a busy road with many motorcycles and pedestrians'}
         ]
+    }),
+    new Datapoint(40.7128, -74.0060, {
+        image_path: "./static/images/nyc.jpeg",
+        labelsAndTexts: [
+            {label: 'City: ', text: 'New York City'},
+            {label: 'Country: ', text: 'United States'},
+            {label: 'Location: ', text: '40.7128° N, 74.0060° W'},
+            {label: 'Direction: ', text: 'Right-hand traffic'},
+            {label: 'Scenario: ', text: 'No right turn on red'}
+        ]
     })
+    // ,new Datapoint(38.9072, -77.0369, {
+    //     image_path: "./static/images/wdc.jpeg",
+    //     labelsAndTexts: [
+    //         {label: 'City: ', text: 'Washington, DC'},
+    //         {label: 'Country: ', text: 'United States'},
+    //         {label: 'Location: ', text: '38.9072° N, 77.0369° W'},
+    //         {label: 'Direction: ', text: 'Right-hand traffic'},
+    //         {label: 'Scenario: ', text: 'No turn right on red'}
+    //     ]
+    // })
+
+
 ];
 
 
