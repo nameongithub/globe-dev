@@ -138,8 +138,8 @@ export const datapoints = [
             {label: 'City: ', text: 'Paris'},
             {label: 'Country: ', text: 'France'},
             {label: 'Location: ', text: '48.8566° N, 2.3522° E'},
-            {label: 'Direction: ', text: 'right-hand traffic'},
-            {label: 'Scenario: ', text: 'Yielding to cars from the right even if driving straight'}
+            {label: 'Direction: ', text: 'Right-hand traffic'},
+            {label: 'Scenario: ', text: 'Yielding to cars from the right even though you\'re driving straight'}
         ]
     }),
     new Datapoint(19.0760, 72.8777, {
@@ -149,7 +149,7 @@ export const datapoints = [
             {label: 'Country: ', text: 'India'},
             {label: 'Location: ', text: '19.0760° N, 72.8777° E'},
             {label: 'Direction: ', text: 'Left-hand traffic'},
-            {label: 'Scenario: ', text: 'Driving on a busy road full of motorcycles and pedestrians'}
+            {label: 'Scenario: ', text: 'Driving on a busy road with many motorcycles and pedestrians'}
         ]
     })
 ];
