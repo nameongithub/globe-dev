@@ -77,7 +77,7 @@ export const datapoints = [
         labelsAndTexts: [
             {label: 'City: ', text: 'San Francisco, CA'},
             {label: 'Country: ', text: 'United States'},
-            {label: 'Location: ', text: '37.774°N, 122.419°W'},
+            {label: 'Location: ', text: '37.774° N, 122.419° W'},
             {label: 'Direction: ', text: 'Right-hand traffic'},
             {label: 'Scenario: ', text: 'Turn right on red'}
         ]
@@ -87,7 +87,7 @@ export const datapoints = [
         labelsAndTexts: [
             {label: 'City: ', text: 'Pittsburgh, PA'},
             {label: 'Country: ', text: 'United States'},
-            {label: 'Location: ', text: '40.440°N, 79.995°W'},
+            {label: 'Location: ', text: '40.440° N, 79.995° W'},
             {label: 'Direction: ', text: 'Right-hand traffic'},
             {label: 'Scenario: ', text: 'Yield to a car doing &quot;Pittsburgh Left&quot;'}
         ]
@@ -97,9 +97,59 @@ export const datapoints = [
         labelsAndTexts: [
             {label: 'City: ', text: 'London'},
             {label: 'Country: ', text: 'United Kingdom'},
-            {label: 'Location: ', text: '51.507°N, 0.127°W'},
+            {label: 'Location: ', text: '51.507° N, 0.127° W'},
             {label: 'Direction: ', text: 'Left-hand traffic'},
             {label: 'Scenario: ', text: 'Drive on the left'}
+        ]
+    }),
+    new Datapoint(1.3521, 103.8198, {
+        image_path: "./static/images/singapore2.jpeg",
+        labelsAndTexts: [
+            {label: 'City: ', text: 'Singapore'},
+            {label: 'Country: ', text: 'Singapore'},
+            {label: 'Location: ', text: '1.3521° N, 103.8198° E'},
+            {label: 'Direction: ', text: 'Left-hand traffic'},
+            {label: 'Scenario: ', text: 'Overtaking from the right-hand lane'}
+        ]
+    }),
+    new Datapoint(22.3193, 114.1694, {
+        image_path: "./static/images/hongkong.jpg",
+        labelsAndTexts: [
+            {label: 'City: ', text: 'Hong Kong'},
+            {label: 'Country: ', text: 'China'},
+            {label: 'Location: ', text: '22.3193° N, 114.1694° E'},
+            {label: 'Direction: ', text: 'Left-hand traffic'},
+            {label: 'Scenario: ', text: 'Driving on a narrow slope'}
+        ]
+    }),
+    new Datapoint(-37.8136, 144.9631, {
+        image_path: "./static/images/melbourne.jpeg",
+        labelsAndTexts: [
+            {label: 'City: ', text: 'Melbourne'},
+            {label: 'Country: ', text: 'Australia'},
+            {label: 'Location: ', text: '37.8136° S, 144.9631° E'},
+            {label: 'Direction: ', text: 'Left-hand traffic'},
+            {label: 'Scenario: ', text: 'Turning right from the left lane (hook turn)'}
+        ]
+    }),
+    new Datapoint(48.8566, 2.3522, {
+        image_path: "./static/images/paris.jpeg",
+        labelsAndTexts: [
+            {label: 'City: ', text: 'Paris'},
+            {label: 'Country: ', text: 'France'},
+            {label: 'Location: ', text: '48.8566° N, 2.3522° E'},
+            {label: 'Direction: ', text: 'right-hand traffic'},
+            {label: 'Scenario: ', text: 'Yielding to cars from the right even if driving straight'}
+        ]
+    }),
+    new Datapoint(19.0760, 72.8777, {
+        image_path: "./static/images/mumbai.jpeg",
+        labelsAndTexts: [
+            {label: 'City: ', text: 'Mumbai'},
+            {label: 'Country: ', text: 'India'},
+            {label: 'Location: ', text: '19.0760° N, 72.8777° E'},
+            {label: 'Direction: ', text: 'Left-hand traffic'},
+            {label: 'Scenario: ', text: 'Driving on a busy road full of motorcycles and pedestrians'}
         ]
     })
 ];
