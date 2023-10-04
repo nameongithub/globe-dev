@@ -173,6 +173,17 @@ export const datapoints = [
     //     ]
     // })
 
+    ,new Datapoint(23.1291, 113.2644, {
+        image_path: "./static/images/gz.jpg",
+        labelsAndTexts: [
+            {label: 'City: ', text: 'Guangzhou'},
+            {label: 'Country: ', text: 'China'},
+            {label: 'Location: ', text: '23.1291° N, 113.2644° E'},
+            {label: 'Direction: ', text: 'Right-hand traffic'},
+            {label: 'Scenario: ', text: 'Slowing down at a Chinese yield sign'}
+        ]
+    })
+
 
 ];
 
